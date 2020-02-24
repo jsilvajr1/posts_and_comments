@@ -1,0 +1,10 @@
+h1> All Polls </h1>
+{% if post_list %}
+  <ul>
+    {% for post in post_list %}
+      <li><a href="{% url 'posts:detail' post.id %}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No polls are available.</p>
+{% endif %}

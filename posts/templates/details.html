@@ -1,0 +1,14 @@
+  
+<h1>Post Details</h1>
+<h2> {{ post_list.title}}</h2>
+<p> {{ post_list.body }}</p>
+
+<br> <hr> <br>
+
+<h1>Comments</h1>
+<ul>
+  {% for comment in comments %}
+    <li>{{ comment.body }}</li>
+  {% endfor %}
+</ul>
+© 2020 GitHub, Inc.
